@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    
+
+    <section class="container">
+        <div class="box-calculator" id="box-calculator-id"> 
+            <h1> Calculadora de IRFF</h1>
+            <input type="number"  id="gross-salary" placeholder="Salário-bruto">
+            <input type="number"  id="dependents" placeholder="Depedentes"> 
+            <input type="number"  id ="deductions" placeholder="Outras deduções">
+            <div id='erro_sal_br'></div>
+            <input type="button" value="Limpar" onclick="clica_limpar()">
+            <input type="button" value="Calcular IRRF" onclick="clica_calcula()">
+        </div><!--box-calculator-->
+    
+        <div class="result" id='result-id'>
+    
+        </div> <!--result-->
+    </section>
+    
+    
+    <script src="./js/script.js"></script>
+
+    
+</body>
+</html>
