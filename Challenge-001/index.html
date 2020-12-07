@@ -9,11 +9,25 @@
 <body>
     
 
-    <section class="container">
+    <section class="container" id ="container">
         <div class="box-calculator" id="box-calculator-id"> 
             <h1> Calculadora de IRFF</h1>
             <input type="number"  id="gross-salary" placeholder="Salário-bruto">
-            <input type="number"  id="dependents" placeholder="Depedentes"> 
+            <!--<input type="number"  id="dependents" placeholder="Depedentes">-->
+            <select id="dependents" >
+                <option draggable="true" value="0">Dependentes</option>
+                <option value="0">00</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+            </select>
             <input type="number"  id ="deductions" placeholder="Outras deduções">
             <div id='erro_sal_br'></div>
             <input type="button" value="Limpar" onclick="clica_limpar()">
@@ -21,11 +35,22 @@
         </div><!--box-calculator-->
     
         <div class="result" id='result-id'>
-    
+            <h1>Memória de calculo</h1>
+            <div class="box-result">
+                <p>Salário Base </p><div class="box-span"><span id="base-salary"></span></div>
+                <p>Cálculo de INSS</p><div class="box-span"><span id="res_inss"></span></div>
+                <p>Dependentes: </p><div class="box-span"><span id="res_dependents"></span></div>
+                <p>Outras deduções: </p><div class="box-span"><span id="res_deduction"></span></div>
+                <p>Base para Cálculo</p><div class="box-span"><span id="res_base-calc"></span></div>
+                <p>Imposto devido</p><div class="box-span"><span id="base-tax"></span></div>
+            </div><!--box-result-->
         </div> <!--result-->
     </section>
     
-    
+    <div class="teams">
+        <input type="button" value="ESCURO" onclick="escuro()">
+        <input type="button" value="CLARO" onclick="claro()">
+    </div><!--teams-->
     <script src="./js/script.js"></script>
 
     
