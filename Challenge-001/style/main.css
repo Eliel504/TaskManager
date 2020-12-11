@@ -23,7 +23,6 @@ body{
     margin-top: 100px;
     margin-bottom: 20px;
     border-radius: 5px;
-    transition: 2s;
     padding: 0 2%;
     
 }
@@ -38,6 +37,7 @@ body{
     border: 10px solid rgba(3, 3, 3, 0.349);
     background-clip: padding-box;
     transition: 1s;
+    animation: anime_calculator 3s infinite;
 }
 
 .box-calculator h1{
@@ -69,17 +69,18 @@ body{
     color: rgb(19, 82, 119);;
     transition: 0.5s;
     outline: none;
-    background: linear-gradient(grey, white, grey);   
+    background: linear-gradient(grey, white, grey); 
+     
 }
 
 
 
 .box-calculator input:hover {
-    box-shadow: 2px 2px 10px grey;
+    background: linear-gradient(rgb(92, 92, 92),rgb(224, 224, 224),rgb(104, 104, 104));
 }
 
 .box-calculator select:hover {
-    box-shadow: 2px 2px 10px grey;
+    background: linear-gradient(rgb(92, 92, 92),rgb(224, 224, 224),rgb(104, 104, 104));
 }
 
 .box-calculator input[type='number']:focus{
@@ -102,7 +103,12 @@ body{
     outline: none;
     transition: 0.5s;
     color: rgb(3, 58, 83);
+    cursor: pointer;
     
+}
+
+.box-calculator > input[type ='button']:hover{
+    background: linear-gradient(rgb(59, 59, 59),rgb(109, 109, 109),rgb(184, 183, 183),rgb(49, 49, 49));
 }
 
 
@@ -117,18 +123,36 @@ body{
     border-collapse: unset;
     background-clip: padding-box;
     transition: 1s;
+    animation: anime_result 3s infinite;
     
 }
+
+@keyframes anime_result{
+    50%{
+        border: 10px solid rgba(3, 3, 3, 0.596);
+        border-left: 5px ;  
+    }
+}
+
+@keyframes anime_calculator{
+    50%{
+        border: 10px solid rgba(3, 3, 3, 0.596);
+        
+    }
+}
+
 
 .result h1{
     margin-bottom: 15px;
     color: white; 
+    
    
 }
 
 .result p{
     color: white;
     margin-bottom: 5px;
+    
 }
 
 .result > input{
@@ -141,6 +165,10 @@ body{
     margin-top: 10px;
 }
 
+.result > input:hover{
+    background: linear-gradient(rgb(59, 59, 59),rgb(109, 109, 109),rgb(184, 183, 183),rgb(49, 49, 49));
+}
+
 .box-span{
     width: 60%;
     margin: 0 auto;
@@ -151,6 +179,7 @@ body{
     color: rgb(19, 82, 119);
     margin-bottom: 10px;
     transition: 2s;
+    
 }
 
 .box-span:hover{
@@ -165,6 +194,7 @@ body{
 div.teams{
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .teams input:nth-of-type(1){
@@ -173,6 +203,9 @@ div.teams{
     padding: 10px 20px;
     outline-color: rgb(24, 91, 122);
     cursor: pointer;
+}
+.teams input:nth-of-type(1):hover{
+    background: linear-gradient(black, rgb(3, 39, 56));
 }
 
 .teams input:nth-of-type(2){
@@ -183,6 +216,11 @@ div.teams{
     outline-color: rgb(24, 91, 122);
     cursor: pointer;
 }
+
+.teams input:nth-of-type(2):hover{
+    background: linear-gradient(rgb(201, 200, 200), rgb(3, 58, 83));
+}
+
 
 @media screen and (max-width: 672px){
     .container{
