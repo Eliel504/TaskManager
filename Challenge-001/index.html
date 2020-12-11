@@ -11,11 +11,10 @@
 
     <section class="container" id ="container">
         <div class="box-calculator" id="box-calculator-id" onmouseout="entrar()"> 
-            <h1 id="title-calc"> Calculadora de IRFF</h1>
+            <h1 id="title-calc"> Calculadora de IRRF</h1>
             <input type="number"  id="gross-salary" placeholder="Salário-bruto">
-            <!--<input type="number"  id="dependents" placeholder="Depedentes">-->
-            <select id="dependents" >
-                <option value="0">Dependentes</option>
+            <select title="Dependentes" id="dependents" >
+                <option id ='selection' value="" selected disabled >Dependentes</option>
                 <option value="0">00</option>
                 <option value="1">01</option>
                 <option value="2">02</option>
@@ -44,7 +43,7 @@
                 <p id="box-span-id5" >Base para Cálculo</p><div class="box-span"><span></span><span id="res_base-calc">R$ 0,00</span></div>
                 <p id="box-span-id6">Imposto devido</p><div  class="box-span"><span></span><span id="base-tax">R$ 0,00</span></div>
             </div><!--box-result-->
-            <input type="button" value="Calcular novamente" onclick="clicar_calc_novavente()">
+            <input type="button" value="Calcular novamente" onclick="clicar_calc_novamente()">
         </div> <!--result-->
     </section>
     
