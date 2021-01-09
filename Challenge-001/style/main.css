@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-weight: lighter;
 }
 html,body{
     height: 100%;
@@ -31,18 +32,25 @@ body{
     width: 50%;
     max-width: 350px;
     padding: 20px 10px;
-    text-align: center;
-    background: linear-gradient(black, rgb(3, 58, 83));
+    background: linear-gradient(black, rgb(5, 42, 59));
     margin: 0 auto;
     border: 10px solid rgba(3, 3, 3, 0.349);
     background-clip: padding-box;
     transition: 1s;
     animation: anime_calculator 3s infinite;
+    text-align: center;
 }
 
 .box-calculator h1{
     margin-bottom: 30px;
-    color: white;
+    color: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.box-calculator p{
+    color: rgb(88, 88, 88);
+    margin-bottom: 10px;
+    
 }
 
 .box-calculator input[type='number']{
@@ -52,10 +60,10 @@ body{
     margin-bottom: 20px;
     border-radius: 10px;
     border: 3px double rgb(88, 88, 88);
-    color: rgb(19, 82, 119);;
+    color: rgb(88, 88, 88);
     transition: 0.5s;
     outline: none;
-    background: linear-gradient(rgb(114, 113, 113),white,grey);
+    background: transparent;
     
 }
 
@@ -65,22 +73,23 @@ body{
     padding-left: 10px;
     margin-bottom: 20px;
     border-radius: 10px;
+    border: 0;
     border: 3px double rgb(88, 88, 88);
-    color: rgb(19, 82, 119);;
+    color: rgb(88, 88, 88);
     transition: 0.5s;
     outline: none;
-    background: linear-gradient(grey, white, grey); 
+    background: transparent;
      
 }
 
 
 
-.box-calculator input:hover {
-    background: linear-gradient(rgb(92, 92, 92),rgb(224, 224, 224),rgb(104, 104, 104));
+.box-calculator input[type= 'number']:hover{
+    border: 3px double rgb(180, 180, 180);
 }
 
 .box-calculator select:hover {
-    background: linear-gradient(rgb(92, 92, 92),rgb(224, 224, 224),rgb(104, 104, 104));
+    border: 3px double rgb(180, 180, 180);
 }
 
 .box-calculator input[type='number']:focus{
@@ -91,30 +100,30 @@ body{
     width: 100%;
 }
 
-.box-calculator input::placeholder{
-    color: rgb(19, 82, 119);
-    
-}
 
 .box-calculator > input[type ='button']{
     padding: 10px;
-    background: linear-gradient(rgb(77, 76, 76),grey,rgb(201, 200, 200),rgb(77, 76, 76));
+    background: transparent;
     margin-left: 20px;
     outline: none;
     transition: 0.5s;
-    color: rgb(3, 58, 83);
+    color: rgb(160, 160, 160);
+    border: 0;
+    border: 1px double rgb(160, 160, 160) ;
     cursor: pointer;
+    border-radius: 10px;
     
 }
 
 .box-calculator > input[type ='button']:hover{
-    background: linear-gradient(rgb(59, 59, 59),rgb(109, 109, 109),rgb(184, 183, 183),rgb(49, 49, 49));
+    
+    border: 1px double rgb(255, 255, 255) ;
 }
 
 
 .result {
     width: 50%;
-    background: linear-gradient(black, rgb(3, 58, 83));
+    background: linear-gradient(black, rgb(5, 42, 59));
     padding: 20px 10px;
     text-align: center;   
     display: none;
@@ -143,82 +152,56 @@ body{
 
 
 .result h1{
-    margin-bottom: 15px;
-    color: white; 
+    margin-bottom: 30px;
+    color: rgb(179, 179, 179);
     
    
 }
 
 .result p{
-    color: white;
+    color: rgb(182, 181, 181);
     margin-bottom: 5px;
     
 }
 
 .result > input{
     padding: 10px;
-    background: linear-gradient(rgb(77, 76, 76),grey,rgb(201, 200, 200),rgb(77, 76, 76));
     outline: none;
     transition: 0.5s;
-    color: rgb(3, 58, 83);
+    background: transparent;
+    color: rgb(160, 160, 160);
+    border: 0;
+    border: 1px double rgb(160, 160, 160) ;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 10px;
 }
 
 .result > input:hover{
-    background: linear-gradient(rgb(59, 59, 59),rgb(109, 109, 109),rgb(184, 183, 183),rgb(49, 49, 49));
+    border: 1px double rgb(255, 255, 255) ;
 }
 
 .box-span{
     width: 60%;
     margin: 0 auto;
-    background: linear-gradient(grey, white, grey);
+    background: transparent;
     line-height: 20px;
     border: 3px double rgb(88, 88, 88);
     border-radius: 10px;
-    color: rgb(19, 82, 119);
-    margin-bottom: 10px;
-    transition: 2s;
+    color: rgb(88, 88, 88);
+    margin-bottom: 20px;
+    transition: 0.7s;
     
 }
 
 .box-span:hover{
     width: 90%;
+    color: white;
 }
 
 .box-span span{
     transition: 1s;
-}
-
-
-div.teams{
-    margin: 0 auto;
-    text-align: center;
-    
-}
-
-.teams input:nth-of-type(1){
-    background: linear-gradient(black, rgb(3, 58, 83));
-    color: white;
-    padding: 10px 20px;
-    outline-color: rgb(24, 91, 122);
-    cursor: pointer;
-}
-.teams input:nth-of-type(1):hover{
-    background: linear-gradient(black, rgb(3, 39, 56));
-}
-
-.teams input:nth-of-type(2){
-    background: linear-gradient(white, rgb(3, 58, 83));
-    color: white;
-    padding: 10px 20px;
-    color: black;
-    outline-color: rgb(24, 91, 122);
-    cursor: pointer;
-}
-
-.teams input:nth-of-type(2):hover{
-    background: linear-gradient(rgb(201, 200, 200), rgb(3, 58, 83));
+    font-weight: bold;
 }
 
 
