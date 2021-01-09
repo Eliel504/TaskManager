@@ -10,6 +10,7 @@
     let box = document.getElementById('box-calculator-id')
     let result = document.getElementById('result-id')
     let erro_sal = document.getElementById('erro_sal_br')
+    let erro_deduct = document.getElementById('erro-deduct')
     let base_salary = document.getElementById('base-salary')
     let body_id = document.getElementById('body_id')
     let title_result = document.getElementById('title-result')
@@ -28,13 +29,21 @@ function clica_calcula(){
         erro_sal.innerHTML= `O valor do salário deve ser maior que 0.` 
         erro_sal.style.color='red' 
         erro_sal.style.marginBottom='15px'
+        erro_deduct.style.display='none'
+    }else if(deduct.value < 0){
+        erro_deduct.style.display='block'
+        erro_deduct.innerHTML='O valor da dedução não pode ser menor que 0.'
+        erro_deduct.style.color ='red'
+        erro_deduct.style.marginBottom='15px'
+        erro_sal.style.display='none'
     }else{
         erro_sal.style.display='none'
+        erro_deduct.style.display='none'
         result.style.display='inline'
+
         /*SALÁRIO BRUTO*/
         let sal = parseFloat(sal_bruto.value)
         base_salary.innerHTML=`R$ ${sal.toFixed(2)}`   
-        base_salary.style.color='rgb(19, 82, 119)'
         
         /* DEPENDENTES  */
         let calc_dep = parseFloat(dep.value * 189.59)
@@ -44,7 +53,7 @@ function clica_calcula(){
         let deduct_val = parseFloat(deduct.value);
         if(deduct.value.length == 0){
             deduct_val = 0;
-            res_deduct.innerHTML='R$ 0,00'
+            res_deduct.innerHTML='R$ 0.00'
         }else{
             res_deduct.innerHTML=`R$ ${deduct_val.toFixed(2)}`
         }
@@ -96,38 +105,6 @@ function clica_calcula(){
     }
 }
 
-function claro(){
-    box.style.background='linear-gradient(white, rgb(3, 58, 83))'
-    box.style.backgroundClip='padding-box'
-    result.style.background='linear-gradient(white, rgb(3, 58, 83))'
-    result.style.backgroundClip='padding-box'
-    body_id.style.backgroundImage='url(/Challenge-001/images/claro.jpg)'
-    title_calc.style.color='rgb(19, 82, 119)'
-    title_result.style.color='rgb(19, 82, 119)'
-    box_span1.style.color='black'
-    box_span2.style.color='black'
-    box_span3.style.color='black'
-    box_span4.style.color='black'
-    box_span5.style.color='black'
-    box_span6.style.color='black'
-
-}
-
-function escuro(){
-    box.style.background='linear-gradient(black, rgb(3, 58, 83))'
-    box.style.backgroundClip='padding-box'
-    result.style.background='linear-gradient(black, rgb(3, 58, 83))'
-    result.style.backgroundClip='padding-box'
-    body_id.style.backgroundImage=' url(/Challenge-001/images/au1D4I.jpg)'
-    title_calc.style.color='white'
-    title_result.style.color='white'
-    box_span1.style.color='white'
-    box_span2.style.color='white'
-    box_span3.style.color='white'
-    box_span4.style.color='white'
-    box_span5.style.color='white'
-    box_span6.style.color='white'
-}
 
 function clica_limpar(){
     sal_bruto.value = null
