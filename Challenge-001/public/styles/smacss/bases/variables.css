@@ -1,0 +1,29 @@
+:root{
+    /*WHITE*/
+    --white-color: rgb(255, 255, 255);
+   
+    /*BLACK*/
+    --black-color: rgb(0,0,0);
+    --black-color-opacity1: rgba(0, 0, 0, 0.192); 
+    --black-color-opacity2: rgba(0, 0, 0, 0.336); 
+    
+    /*GREEN*/
+    --green-color1:  rgb(3, 71, 3);
+    --green-color2: rgb(4, 21, 29);
+    --gren-color-opacity: rgba(3, 34, 3, 0.459);
+    
+    /*GRAY*/
+    --gray-color1: rgb(180, 180, 180);
+    --gray-color2: rgb(160, 160, 160);
+    --gray-color3: rgb(148, 148, 148);
+    --gray-color4: rgb(88, 88, 88);
+
+    /*RED*/
+    --red-color: rgb(61, 4, 4);
+    --red-color-opacity: rgba(61, 7, 7, 0.308);
+}
+
+
+
+
+

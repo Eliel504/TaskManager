@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+html,body{
+    height: 100%;
+}
+
+body{
+    background-image: url(/public/images/au1D4I.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: 1s; 
+}

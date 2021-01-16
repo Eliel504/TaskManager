@@ -1,0 +1,24 @@
+.is-relative{
+    position: relative;
+}
+
+.is-absolute{
+    position: absolute;
+}
+
+.is-flex{
+    display: flex;
+}
+
+.is-none{
+    display: none;
+}
+
+.is-left{
+    float: left;
+}
+
+.is-rigth{
+    float: right;
+}
+

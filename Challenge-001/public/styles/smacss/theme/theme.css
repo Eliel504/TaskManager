@@ -1,0 +1,52 @@
+
+.box-black-green{
+    background: linear-gradient(var(--black-color), var(--green-color2)); 
+    border: 10px solid var(--black-color-opacity1); 
+    background-clip: padding-box;
+    transition: 1s;
+    animation: anime_calculator 3s infinite; 
+}
+
+@keyframes anime_calculator{
+    50%{
+        border: 10px solid var(--black-color-opacity2); 
+        background-clip: padding-box;
+    }
+}
+
+.input-gray-transparent{
+    border: 3px solid var(--gray-color4); 
+    color: var(--gray-color4); 
+    transition: 0.5s; 
+    background: transparent; 
+}
+
+.input-gray-transparent:hover{
+    border: 3px solid var(--gray-color1);
+}
+
+.input-gray-transparent:focus{
+    width: 100%;
+}
+
+.button-gray-transparent{
+    background: transparent; 
+    transition: 0.5s; 
+    color: var(--gray-color2); 
+    border: 1px double var(--gray-color2); 
+}
+
+.button-gray-transparent:hover{
+    border: 1px solid var(--green-color1);
+    background-color: var(--gren-color-opacity);
+}
+
+.hover-red:hover{
+    border: 1px solid var(--red-color);
+    background-color: var(--red-color-opacity);
+}
+
+.box-span:hover{
+    width: 90%;
+    color: var(--white-color);
+}

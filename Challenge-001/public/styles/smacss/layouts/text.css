@@ -1,0 +1,17 @@
+.l-centerText{
+    text-align: center;
+}
+
+.l-bold{
+    font-weight: bold;
+}
+
+.l-h1{
+    margin-bottom: 30px;
+    color: var(--gray-color1);
+}
+
+.l-p{
+    color: var(--gray-color3);
+    margin-bottom: 10px;
+}
