@@ -1,0 +1,19 @@
+.l-centerText{
+    text-align: center;
+}
+
+.l-left{
+    text-align: left;
+}
+
+.l-rigth{
+    text-align: right;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.lighter{
+    font-weight: lighter;
+}

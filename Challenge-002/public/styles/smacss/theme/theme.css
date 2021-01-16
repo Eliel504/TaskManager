@@ -1,0 +1,56 @@
+.th-btn{
+    background-color: transparent;
+    color: var(--green-color3);
+    border: 1px solid var(--grey-color1);
+    color: var(--green-color1);
+}
+
+.th-inputText{
+    background-color: transparent;
+    border: 1px solid var(--grey-color1);
+    color: var(--white-color1);
+}
+
+/* .th-box{
+    background: linear-gradient(black, black,rgb(19, 44, 35));
+} */
+
+.th-h1{
+    color: var(--white-color1);
+    border-bottom: 1px solid var(--grey-color2);
+    padding-bottom: 10px;
+}
+
+.th-icon{
+    background-image: url(/./public/icons/adicionar.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.th-bnt-remove{
+    background-image: url(/./public/icons/excluir.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.th-input-time{
+    background: transparent; 
+    color: var(--white-color1);
+    border: 1px solid var(--grey-color1);
+    
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(var(--green-color3),var(--black-color), var(--black-color));
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: var(--white-color2);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--green-color2)
+}
+
+
+
