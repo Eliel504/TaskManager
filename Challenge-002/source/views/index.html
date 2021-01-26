@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task Manager</title>
+
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/bases/resete.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/bases/variables.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/layouts/text.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/modules/modules.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/states/is.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/theme/theme.css">
+
+
+</head>
+<body>
+
+    <div class="content is-relative">
+            <div id="box-one" class="box one is-absolute th-box">
+                <h1 class="l-centerText th-h1">Task Manager</h1>
+
+                <form>
+                    <div class="is-flex">
+                        <input class="inputTask th-inputText" type="text" id="task" placeholder="Digite uma tarefa"/>
+                        <input type="time" id="time" class="input-time th-input-time">
+                    </div>
+                    <div id="erro_task" class="is-none l-centerText"></div>
+                
+                    <button class="btn bold th-btn-add" type="button" onclick="add_task()">
+                        <div class="is-flex-btn-add">
+                            <span class="bold">ADD TASK</span>
+                            <div class="icon th-icon-add"></div>
+                        </div><!--is-flex-->
+                    </button>
+                </form>
+            </div>
+
+            <div id="box-two" class="box two is-absolute th-box">
+                <div id="content-list" class="to-do-list-box">
+                    <ul id='my-lyst'>
+
+                    </ul>
+                </div>
+                
+                <button class="btn th-btn-dell" onclick="delete_all()">
+                    <div class="is-flex-btn-add">
+                        <span class="bold">DELETE ALL</span>
+                        <div class="icon th-icon-dell"></div>
+                    </div>
+                </button>
+            </div>
+    </div><!--content-->
+
+    <script src="/Challenge-002/public/scripts/script.js"></script>
+    
+</body>
+</html>
