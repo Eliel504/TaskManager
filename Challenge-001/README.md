@@ -14,18 +14,20 @@
 <br>
 
 
-<div align='center' >
-    <h1>Desktop</h1>
-    <img alt='git de demostração da aplicação mobile.' src="./design/page/gif/desktop/calculadora_desktop.gif"/>
-</div>
+<!-- <h1 align='center' >
+    Desktop
+</h1> -->
+<p>
+<img src="./design/page/gif/desktop/calculadora_desktop.gif" alt='git de demostração da aplicação mobile.' />
+</p>
 
-<br>
+<!-- 
 <br>
 
-<div align='center'>
-    <h1>Mobile</h1>
+<h1 align='center'>
+    Mobile
     <img alt='git de demostração da aplicação desktop.' src="./design/page/gif/mobile/calculadora_mobile.gif"/>
-</div>
+</h1> -->
 
 <br>
 <br>
