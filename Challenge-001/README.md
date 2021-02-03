@@ -16,7 +16,7 @@
 
 <div align='center' >
     <h1>Desktop</h1>
-    <img alt='git de demostração da aplicação mobile.' src="design/page/gif/desktop/calculadora_desktop.gif"/>
+    <img alt='git de demostração da aplicação mobile.' src="./design/page/gif/desktop/calculadora_desktop.gif"/>
 </div>
 
 <br>
@@ -24,7 +24,7 @@
 
 <div align='center'>
     <h1>Mobile</h1>
-    <img alt='git de demostração da aplicação desktop.' src="design/page/gif/mobile/calculadora_mobile.gif"/>
+    <img alt='git de demostração da aplicação desktop.' src="./design/page/gif/mobile/calculadora_mobile.gif"/>
 </div>
 
 <br>
