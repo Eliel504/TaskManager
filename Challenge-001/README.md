@@ -5,28 +5,18 @@
 <br>
 <br>
 
-<div align='center'>
-    <p>
-        <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
-        <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
-        <img alt="GitHub" src="https://img.shields.io/github/license/Eliel504/WebApplicationsChallenges?style=flat-square">
-    </p>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
-  <a href="#licença">Licença</a>
-</div>
+<p align='center'>
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
+</p>
 
 <br>
 <br>
 
 
-<div align='center' height='500px'>
+<div align='center' >
     <h1>Desktop</h1>
-    <img src="design/page/gif/desktop/calculadora_desktop.gif"/>
+    <img alt='git de demostração da aplicação mobile.' src="design/page/gif/desktop/calculadora_desktop.gif"/>
 </div>
 
 <br>
@@ -34,16 +24,15 @@
 
 <div align='center'>
     <h1>Mobile</h1>
-    <img src="design/page/gif/mobile/calculadora_mobile.gif"/>
+    <img alt='git de demostração da aplicação desktop.' src="design/page/gif/mobile/calculadora_mobile.gif"/>
 </div>
 
 <br>
 <br>
 
 ## Tecnologias
-<hr>
-<br>
 
+<br>
     
 **IDE**
 
@@ -54,12 +43,4 @@
 - HTML;
 - CSS / [SMACSS](http://smacss.com/) (Scalable and Modular Architecture for CSS);
 - JavaScript.
-
-<br>
-
-## Licença
-<hr>
-<br>
-
-Este projeto está sob a licença do **MIT**. Acesse o arquivo [LICENSE](https://github.com/JesseLopesDev/CalculaIRRF/blob/master/LICENSE) para obter mais informações.
 
