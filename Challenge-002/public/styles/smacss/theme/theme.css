@@ -1,47 +1,119 @@
-.th-btn{
+/*BOX*/
+
+/*gradient black/grey*/
+
+.th-box-g-black-grey{
+    background: linear-gradient(var(--black-color), var(--black-color),var(--grey-color4));
+}
+
+/*gradient grey/black*/
+
+.th-box-g-grey-black{
+    background: linear-gradient(var(--grey-color4),var(--black-color), var(--black-color));
+}
+
+
+
+/*BOTÕES--------------------------------*/
+
+/*white*/
+
+.th-btn-white{
     background-color: transparent;
-    color: var(--green-color3);
-    border: 1px solid var(--grey-color1);
-    color: var(--green-color1);
-}
-
-.th-inputText{
-    background-color: transparent;
-    border: 1px solid var(--grey-color1);
     color: var(--white-color1);
-}
-
-/* .th-box{
-    background: linear-gradient(black, black,rgb(19, 44, 35));
-} */
-
-.th-h1{
-    color: var(--white-color1);
-    border-bottom: 1px solid var(--grey-color2);
-    padding-bottom: 10px;
-}
-
-.th-icon{
-    background-image: url(/./public/icons/adicionar.png);
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.th-bnt-remove{
-    background-image: url(/./public/icons/excluir.png);
-    background-position: center;
-    background-size: 100% 100%;
-}
-
-.th-input-time{
-    background: transparent; 
-    color: var(--white-color1);
-    border: 1px solid var(--grey-color1);
     
 }
 
+.th-btn-white:hover{
+    background-color: var(--grey-color5);
+}
+
+/*red*/
+
+.th-btn-red{
+    background-color: transparent;
+    color: var(--red-color);
+}
+
+.th-btn-red:hover{
+    background-color: var(--grey-color5);
+}
+
+/*IMPUTS------------------------------*/
+
+/*grey*/
+.th-input-grey{
+    background-color: transparent;
+    border: 1px solid var(--grey-color1);
+    color: var(--white-color1);
+}
+
+.th-input-grey:hover{
+    border: 1px solid var(--white-color1);
+}
+
+/*TEXTO------------------------------*/
+
+/*white*/
+.th-title-white{
+    color: var(--white-color1);
+    border-bottom: 1px solid var(--grey-color2);
+    padding-bottom: 10px;
+    transition: 0.7s;
+}
+
+.th-title-white:hover{
+    color: var(--grey-color1);
+}
+
+
+
+/*ÍCONES-------------------------------*/
+
+/*red*/
+
+.th-icon-dell-red{
+    background-image: url(/./Challenge-002/public/icons/deletar_tudo.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.th-icon-remove-red{
+    background-image: url(/./Challenge-002/public/icons/excluir.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/*green*/
+
+.th-icon-add-green{
+    background-image: url(/./Challenge-002/public/icons/adicionar.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/*blue*/
+
+.th-icon-view-blue{
+    background-image: url(/./Challenge-002/public/icons/abrir.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/*purple*/
+
+.th-icon-search-purple{
+    background-image: url(/./Challenge-002/public/icons/pesquisar.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+/*SCROLLBAR-------------------------------*/
+
+
 ::-webkit-scrollbar-track {
-    background: linear-gradient(var(--green-color3),var(--black-color), var(--black-color));
+    background: linear-gradient(var(--grey-color4),var(--black-color), var(--black-color));
 }
 ::-webkit-scrollbar {
     width: 6px;
@@ -49,7 +121,7 @@
     background: var(--white-color2);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--green-color2)
+    background: var(--grey-color2)
 }
 
 
