@@ -71,7 +71,7 @@ Há duas formas para poder utilizar a aplicação:
   - E por fim, digite o seguinte comando:
 
 ```bash
-$ git clone https://github.com/Eliel/TaskManager.git
+$ git clone https://github.com/Eliel504/TaskManager.git
 ```
 
 **Baixando através do GitHub**
