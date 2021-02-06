@@ -1,7 +1,15 @@
 .content{
     max-width: 500px;
+    padding: 0 5%;
     min-height: 350px;
-    margin: 40px auto;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 30px;
+    transition: 0.9s;
+    
+    
 }
 
 .box{
@@ -10,22 +18,29 @@
     border-radius: 5px;
     padding: 10px;
     transition: 1s;
+    
+}
 
+.box ul li{
+    transition: 1s;
 }
 
 .one{
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
-    background: linear-gradient(black, black,rgb(19, 44, 35))
 }
 
 .two{
     z-index: 1;
     top: 0;
     left: 0;
-    overflow: auto;
-    background: linear-gradient(rgb(19, 44, 35),black, black);
+}
+
+.tree{
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 .inputTask{
@@ -34,8 +49,10 @@
     height: 30px;
     padding-left: 8px;
     margin: 10px 5px 10px 0;
-    outline: none;
+    transition: 0.5s;
+    
 }
+
 
 .input-time{
     width: 20%;
@@ -43,8 +60,8 @@
     line-height: 30px;
     text-align: center;
     border: 0;
-    outline: none;
-    /* font-size: 20px; */
+    transition: 0.5s;
+    
 }
 
 form{
@@ -52,22 +69,19 @@ form{
 }
 
 .btn{
-    width: 120px;
+    width: 125px;
     line-height: 30px;
-    display: block;
-    margin:  10px auto;
     cursor: pointer;
     border: 0;
-    
+    margin: 30px 3px;
+    font-size: 13px;
+    transition: 0.7s;
 }
-
-
 
 .icon{
     width: 15px;
     height: 15px;
     margin-left: 10px;
-
 }
 
 .box-task{
@@ -86,7 +100,6 @@ form{
 
 .box-task:hover{
     background-color: grey; 
-
 }
 
 .bnt-remove{
@@ -101,3 +114,15 @@ form{
     height: 100%;
     padding: 8px 0 8px 10px;
 }
+
+.to-do-list-box{
+    height: 87%;
+    overflow: auto;
+}
+
+.lyst-search{
+    transition: 1s;
+}
+
+
+
