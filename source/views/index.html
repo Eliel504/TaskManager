@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task Manager</title>
+
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/bases/resete.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/bases/variables.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/layouts/text.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/modules/modules.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/modules/responsive.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/states/is.css">
+    <link rel="stylesheet" href="/Challenge-002/public/styles/smacss/theme/theme.css">
+
+</head>
+<body>
+    
+    <div id='content-principal' class="content is-relative">
+            <div id="box-one" class="box one is-absolute th-box-g-black-grey">
+                <h1 class="l-centerText th-title-white">Task Manager</h1>
+
+                <form>
+                    <div class="is-flex">
+                        <input class="inputTask th-input-grey" type="text" id="task" placeholder="Enter a task" required/>
+                        <input type="time" id="time" class="input-time th-input-grey">
+                    </div>
+                    <div id="erro_task" class="is-none l-centerText"></div>
+                
+                <div class="is-flex-btn-add">                   
+                    <button class="btn bold th-btn-white btn-box-one" type="button" onclick="add_task()">
+                        <div class="is-flex-btn-add">
+                            <span class="bold is-upper">add task</span>
+                            <div class="icon th-icon-add-green"></div>
+                        </div><!--is-flex-->
+                    </button>
+
+                    <button class="btn bold th-btn-white btn-box-one" type="button" onclick="view_list()" >
+                        <div class="is-flex-btn-add">
+                            <span class="bold is-upper">view list</span>
+                            <div class="icon th-icon-view-blue"></div>
+                        </div><!--is-flex-->
+                    </button>
+                    
+                        <button class="btn bold th-btn-white btn-box-one" type="button" onclick="search()" >
+                            <div class="is-flex-btn-add">
+                                <span class="bold is-upper">search task</span>
+                                <div class="icon th-icon-search-purple"></div>
+                            </div><!--is-flex-->
+                        </button>
+                </div>
+
+                </form>
+            </div>
+
+            <div id="box-two" class="box two is-absolute th-box-g-grey-black">
+                <div id="content-list" class="to-do-list-box">
+                    <ul class="lista" id='my-lyst'>
+
+                    </ul>
+                </div>
+                
+                <button class="btn th-btn-red is-block is-center" onclick="delete_all()">
+                    <div class="is-flex-btn-dell">
+                        <span class="bold is-upper">delete all</span>
+                        <div class="icon th-icon-dell-red"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div id="box-tree" class="box tree is-absolute th-box-g-grey-black">
+                <div id="content-list-search" class="to-do-list-box">
+                    <ul id='my-lyst-search' class="lyst-search">
+
+                    </ul>
+                </div>
+            </div>
+    </div><!--content-->
+
+    <script src="/Challenge-002/public/scripts/variables.js"></script>
+    <script src="/Challenge-002/public/scripts/add_task.js"></script>
+    <script src="/Challenge-002/public/scripts/createBtn.js"></script>
+    <script src="/Challenge-002/public/scripts/createItem.js"></script>
+    <script src="/Challenge-002/public/scripts/delete_all.js"></script>
+    <script src="/Challenge-002/public/scripts/onload.js"></script>
+    <script src="/Challenge-002/public/scripts/remove_item.js"></script>
+    <script src="/Challenge-002/public/scripts/search.js"></script>
+    <script src="/Challenge-002/public/scripts/view_list.js"></script>
+ 
+</body>
+</html>
