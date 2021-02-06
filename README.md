@@ -6,8 +6,9 @@
 <br>
 
 <p align='center'>
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Eliel504/WebApplicationsChallenges?style=flat-square">&nbsp
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Eliel504/TaskManager?style=flat-square">&nbsp
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Eliel504/TaskManager?style=flat-square">&nbsp
+    <img alt="GitHub" src="https://img.shields.io/github/license/Eliel504/CalculaIRRF?style=flat-square">
 </p>
 
 <br>
@@ -51,10 +52,6 @@
 
   - VS Code.
 
-**UI Design**
-
-  - Adobe XD.
-
 **Front-End**
 
   - HTML;
@@ -74,7 +71,7 @@ Há duas formas para poder utilizar a aplicação:
   - E por fim, digite o seguinte comando:
 
 ```bash
-$ git clone https://github.com/JesseLopesDev/CalculaIRRF.git
+$ git clone https://github.com/Eliel/TaskManager.git
 ```
 
 **Baixando através do GitHub**
@@ -85,7 +82,7 @@ $ git clone https://github.com/JesseLopesDev/CalculaIRRF.git
 
 ## Licença
 
-Este projeto está sob a licença do **MIT**. Acesse o arquivo [LICENSE](https://github.com/JesseLopesDev/CalculaIRRF/blob/master/LICENSE) para obter mais informações.
+Este projeto está sob a licença do **MIT**. Acesse o arquivo [LICENSE](https://github.com/Eliel504/TaskManager/blob/master/LICENSE) para obter mais informações.
 
 
 
