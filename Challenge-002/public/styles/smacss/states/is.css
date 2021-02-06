@@ -12,9 +12,23 @@
     justify-content: center;
 }
 
+.is-flex-btn-dell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .is-flex{
     display: flex;
     align-items: center;
+}
+
+.is-block{
+    display: block;
+}
+
+.is-inline-block{
+    display: inline-block;
 }
 
 .is-none{
@@ -28,4 +42,19 @@
 .is-rigth{
     float: right;
 }
+
+.is-center{
+    margin: 10px auto;
+}
+
+.is-upper{
+    text-transform: uppercase;
+    
+}
+
+.is-visible_hidden{
+    visibility: hidden;
+    
+}
+
 
